@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kai Manam – The Taste of Tradition</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Catamaran:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -51,17 +51,17 @@
 
   <!-- DELIVERY BANNER -->
   <div class="delivery-banner">
-    🚚 Free Delivery in Pudukkottai &nbsp;|&nbsp;
-    📦 Fresh Small Batches &nbsp;|&nbsp;
-    ✅ No Preservatives &nbsp;|&nbsp;
-    💬 Order on WhatsApp: 9486772630 &nbsp;|&nbsp;
-    🚚 Free Delivery in Pudukkottai &nbsp;|&nbsp;
-    📦 Fresh Small Batches &nbsp;|&nbsp;
-    ✅ No Preservatives &nbsp;|&nbsp;
-    💬 Order on WhatsApp: 9486772630
+    <div class="marquee-track" id="marqueeTrack">
+      🚚 Free Delivery in Pudukkottai &nbsp;·&nbsp;
+      📦 Freshly Made in Small Batches &nbsp;·&nbsp;
+      🌿 Zero Preservatives &nbsp;·&nbsp;
+      💬 WhatsApp: 9486772630 &nbsp;·&nbsp;
+      🌶️ Traditional Tamil Recipes &nbsp;·&nbsp;
+      ✅ 100% Homemade &nbsp;·&nbsp;
+    </div>
   </div>
 
-  <!-- ════════════════════ HOME PAGE ════════════════════ -->
+  <!-- ════════ HOME PAGE ════════ -->
   <div id="page-home" class="page active">
 
     <section class="hero">
@@ -71,36 +71,21 @@
         <div class="hero-logo-eng">KAI MANAM</div>
         <div class="hero-divider"></div>
         <h1>Not Just Food...<br><span>It's a Feeling of Home</span></h1>
-        <p>Pure homemade masala powders crafted with traditional Tamil recipes.<br>No preservatives. No shortcuts. Just pure love in every spoon.</p>
-        <div class="hero-badges">
-          <div class="badge">🌿 100% Natural</div>
-          <div class="badge">🏡 Homemade</div>
-          <div class="badge">✅ No Preservatives</div>
-          <div class="badge">🌶️ Traditional Recipe</div>
-        </div>
+        <p>Pure homemade masala powders made with traditional Tamil recipes and love. From our kitchen directly to yours.</p>
         <div class="hero-btns">
           <a href="https://wa.me/919486772630?text=Hi! I want to order from Kai Manam"
           class="btn-green" target="_blank">💬 Order on WhatsApp</a>
-          <button class="btn-outline" onclick="showPage('sambar')">View Products</button>
+          <button class="btn-outline" onclick="showPage('sambar')">Explore Products</button>
         </div>
       </div>
     </section>
-
-    <!-- TRUST BAR -->
-    <div class="trust-bar">
-      <div class="trust-item">🌿 No Preservatives</div>
-      <div class="trust-item">🏡 Homemade with Care</div>
-      <div class="trust-item">🌶️ Traditional Tamil Recipes</div>
-      <div class="trust-item">📦 Fresh Small Batches</div>
-      <div class="trust-item">✅ Hygienic Preparation</div>
-    </div>
 
     <!-- PRODUCTS PREVIEW -->
     <section class="preview-section">
       <div class="section-header">
         <div class="section-tag">Our Products</div>
-        <h2>Pure Homemade <span>Masala Powders</span></h2>
-        <p>Click any product to see full details, ingredients, how to use and price.</p>
+        <h2>Made Fresh, <span>Delivered with Love</span></h2>
+        <p>Click any product to see ingredients, how to use, storage tips and price.</p>
       </div>
       <div class="preview-grid">
 
@@ -109,8 +94,8 @@
           <img src="sambar.png" alt="Sambar Podi">
           <div class="preview-body">
             <h3>Sambar Podi</h3>
-            <p>சாம்பார் பொடி · Perfect for Sambar, Rasam & More</p>
-            <div class="shelf-badge">📅 Shelf Life: 6 Months</div>
+            <p>சாம்பார் பொடி · For Sambar, Rasam & More</p>
+            <div class="shelf-badge">📅 6 Months Shelf Life</div>
             <div class="preview-price">From ₹80</div>
             <div class="preview-btn">View Details →</div>
           </div>
@@ -121,8 +106,8 @@
           <img src="healthyidli.png" alt="Healthy Idli Podi">
           <div class="preview-body">
             <h3>Healthy Idli Podi</h3>
-            <p>ஆரோக்கிய இட்லி பொடி · Rich in Protein & Fiber</p>
-            <div class="shelf-badge">📅 Shelf Life: 3 Months</div>
+            <p>ஆரோக்கிய இட்லி பொடி · Rich in Protein</p>
+            <div class="shelf-badge">📅 3 Months Shelf Life</div>
             <div class="preview-price">From ₹70</div>
             <div class="preview-btn">View Details →</div>
           </div>
@@ -132,8 +117,8 @@
           <img src="idli.png" alt="Idli Podi">
           <div class="preview-body">
             <h3>Idli Podi</h3>
-            <p>இட்லி பொடி · Classic & Authentic Taste</p>
-            <div class="shelf-badge">📅 Shelf Life: 4 Months</div>
+            <p>இட்லி பொடி · Classic Authentic Taste</p>
+            <div class="shelf-badge">📅 4 Months Shelf Life</div>
             <div class="preview-price">From ₹70</div>
             <div class="preview-btn">View Details →</div>
           </div>
@@ -144,8 +129,8 @@
           <img src="choco.png" alt="Choco Nutri Mix">
           <div class="preview-body">
             <h3>Choco Nutri Mix</h3>
-            <p>Health Drink Mix · Perfect for Whole Family</p>
-            <div class="shelf-badge">📅 Shelf Life: 2 Months</div>
+            <p>Health Drink · Loved by the Whole Family</p>
+            <div class="shelf-badge">📅 2 Months Shelf Life</div>
             <div class="preview-price">From ₹100</div>
             <div class="preview-btn">View Details →</div>
           </div>
@@ -156,8 +141,8 @@
           <img src="moringa.png" alt="Moringa Soup Powder">
           <div class="preview-body">
             <h3>Moringa Soup Powder</h3>
-            <p>முருங்கை சூப் பொடி · Goodness in Every Bowl</p>
-            <div class="shelf-badge">📅 Shelf Life: 2 Months</div>
+            <p>முருங்கை சூப் பொடி · Iron Rich Goodness</p>
+            <div class="shelf-badge">📅 2 Months Shelf Life</div>
             <div class="preview-price">From ₹90</div>
             <div class="preview-btn">View Details →</div>
           </div>
@@ -166,16 +151,48 @@
       </div>
     </section>
 
-    <!-- REVIEWS SECTION -->
+    <!-- OUR STORY STRIP -->
+    <section class="story-strip">
+      <div class="story-strip-inner">
+        <div class="story-strip-text">
+          <div class="section-tag">The Kai Manam Story</div>
+          <h2>From Our <span>Family Kitchen</span> to Your Home</h2>
+          <p>Kai Manam means the aroma from the hand. Every product we make carries the warmth of traditional Tamil cooking — the same way our grandmothers made it. We started this journey in 2026 with one simple belief: food made with love tastes different.</p>
+          <button class="btn-brown" onclick="showPage('about')">Read Our Full Story →</button>
+        </div>
+        <div class="story-strip-card">
+          <div class="story-quote">"Not Just Food...<br>It's a Feeling of Home"</div>
+          <div class="story-divider"></div>
+          <div class="story-stats">
+            <div class="story-stat">
+              <strong>5</strong>
+              <span>Products</span>
+            </div>
+            <div class="story-stat">
+              <strong>100%</strong>
+              <span>Homemade</span>
+            </div>
+            <div class="story-stat">
+              <strong>0</strong>
+              <span>Preservatives</span>
+            </div>
+          </div>
+          <div class="story-location">📍 Pudukkottai, Tamil Nadu</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS -->
     <section class="reviews-section">
       <div class="section-header">
         <div class="section-tag">Customer Love</div>
         <h2>What Our Customers <span>Say</span></h2>
       </div>
+
       <div class="reviews-grid">
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p>"The sambar powder is exactly like what my mother used to make. The aroma when I opened the packet was just amazing. Genuine homemade taste!"</p>
+          <p>"The sambar powder aroma when I opened the packet reminded me of my mother's cooking. Genuine homemade taste — exactly what I was looking for!"</p>
           <div class="review-author">
             <div class="review-avatar">P</div>
             <div>
@@ -186,7 +203,7 @@
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p>"My kids now drink milk without complaining — all because of the Choco Nutri Mix! It's healthy and they love the taste. Thank you Kai Manam!"</p>
+          <p>"My children drink their milk happily now with the Choco Nutri Mix. As a mother I am happy it is healthy. As a child they are happy it tastes great!"</p>
           <div class="review-author">
             <div class="review-avatar">M</div>
             <div>
@@ -197,7 +214,7 @@
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p>"Moringa soup powder is a game changer! So easy to make and so nutritious. I have it every morning and feel so much more energetic."</p>
+          <p>"The moringa soup every morning has become a habit. So easy to prepare and I genuinely feel healthier. The quality is consistently good every order."</p>
           <div class="review-author">
             <div class="review-avatar">K</div>
             <div>
@@ -207,42 +224,51 @@
           </div>
         </div>
       </div>
-      <p class="review-note">* These are sample reviews. Real customer reviews will be added soon.</p>
-    </section>
 
-    <!-- WHY US -->
-    <section class="why-section">
-      <div class="section-header">
-        <div class="section-tag">Why Kai Manam</div>
-        <h2>Made <span>Different</span>, Tasted Better</h2>
+      <!-- REVIEW FORM -->
+      <div class="review-form-wrap">
+        <h3>Share Your Experience</h3>
+        <p>Tried Kai Manam? We would love to hear from you!</p>
+        <div class="review-form">
+          <div class="review-form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" id="rname" placeholder="Example: Priya Kumar">
+            </div>
+            <div class="form-group">
+              <label>Product You Tried</label>
+              <select id="rproduct">
+                <option>Sambar Podi</option>
+                <option>Healthy Idli Podi</option>
+                <option>Idli Podi</option>
+                <option>Choco Nutri Mix</option>
+                <option>Moringa Soup Powder</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Your Rating</label>
+            <div class="star-rating">
+              <span onclick="setRating(5)">★</span>
+              <span onclick="setRating(4)">★</span>
+              <span onclick="setRating(3)">★</span>
+              <span onclick="setRating(2)">★</span>
+              <span onclick="setRating(1)">★</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Your Review</label>
+            <textarea id="rtext" placeholder="Tell others about your experience with this product..."></textarea>
+          </div>
+          <button class="btn-green" onclick="submitReview()">💬 Submit Review on WhatsApp</button>
+        </div>
       </div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon">🏡</div>
-          <h3>Made in Our Kitchen</h3>
-          <p>Every batch is prepared in our home in Pudukkottai with the same love we cook for our own family.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">🌶️</div>
-          <h3>Traditional Tamil Recipes</h3>
-          <p>Authentic recipes passed through generations — the same flavors your grandmother used to make.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">✨</div>
-          <h3>Zero Preservatives</h3>
-          <p>No artificial preservatives, colors or flavor enhancers. What you get is 100% pure and natural.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">📦</div>
-          <h3>Fresh Small Batches</h3>
-          <p>We never mass produce. Every order is packed fresh so you always get maximum aroma and flavor.</p>
-        </div>
-      </div>
+      <p class="review-note">* Sample reviews shown above. Real reviews will be updated regularly.</p>
     </section>
 
   </div>
 
-  <!-- ════════════════════ SAMBAR PODI PAGE ════════════════════ -->
+  <!-- ════════ SAMBAR PODI PAGE ════════ -->
   <div id="page-sambar" class="page">
     <section class="product-page">
       <button class="back-btn" onclick="showPage('home')">← Back to Products</button>
@@ -258,7 +284,7 @@
           </div>
           <h1>Sambar Podi</h1>
           <p class="prod-tagline">Make Delicious Sambar with Kai Manam Sambar Podi!</p>
-          <p class="prod-desc">Aromatic and perfectly balanced sambar masala made from premium whole spices — freshly roasted and ground for rich aroma. Suitable for all age groups with a balanced spice level.</p>
+          <p class="prod-desc">Aromatic and perfectly balanced masala made from premium whole spices — freshly roasted and ground in our kitchen. Suitable for all age groups with a balanced spice level.</p>
           <div class="info-grid">
             <div class="info-box">
               <h4>🌶️ Ingredients</h4>
@@ -266,15 +292,15 @@
             </div>
             <div class="info-box">
               <h4>🍲 How to Use</h4>
-              <p>Add 1–2 tablespoons while cooking sambar. Mix well and allow to boil for rich flavor. Can also be used in curries, kootu and gravies.</p>
+              <p>Add 1–2 tablespoons while cooking sambar. Mix well and allow to boil. Can also be used in curries, kootu and gravies.</p>
             </div>
             <div class="info-box">
               <h4>📦 Storage Tips</h4>
-              <p>Store in a cool dry place. Keep tightly closed. Refrigerate after opening for longer freshness. Always use a dry spoon.</p>
+              <p>Store in a cool dry place. Keep tightly closed after use. Refrigerate after opening. Always use a dry spoon.</p>
             </div>
             <div class="info-box">
-              <h4>⭐ Why Special</h4>
-              <p>Freshly roasted and ground. No preservatives. No artificial colors. Authentic homemade taste with traditional recipe.</p>
+              <h4>⭐ What Makes It Special</h4>
+              <p>Freshly roasted and ground in small batches. Balanced spice level. Traditional recipe. Made with whole spices only.</p>
             </div>
           </div>
           <div class="price-section">
@@ -292,7 +318,7 @@
     </section>
   </div>
 
-  <!-- ════════════════════ HEALTHY IDLI PODI PAGE ════════════════════ -->
+  <!-- ════════ HEALTHY IDLI PODI PAGE ════════ -->
   <div id="page-healthyidli" class="page">
     <section class="product-page">
       <button class="back-btn" onclick="showPage('home')">← Back to Products</button>
@@ -308,7 +334,7 @@
           </div>
           <h1>Healthy Idli Podi</h1>
           <p class="prod-tagline">Healthy Idli Podi for a Healthy You!</p>
-          <p class="prod-desc">A perfect blend of traditional taste and nutritious ingredients. Rich in protein, high in fiber and loaded with the goodness of nuts and seeds. Made with 100% natural ingredients.</p>
+          <p class="prod-desc">A blend of traditional taste and wholesome nutrition. Rich in protein and fiber, loaded with nuts and seeds. Perfect for a healthy breakfast every single day.</p>
           <div class="info-grid">
             <div class="info-box">
               <h4>🌶️ Ingredients</h4>
@@ -316,15 +342,15 @@
             </div>
             <div class="info-box">
               <h4>🍲 How to Use</h4>
-              <p>Mix with sesame oil or ghee. Serve with idli, dosa or uthappam. Sprinkle on dosa for extra flavor. Also great as a side dish.</p>
+              <p>Mix with sesame oil or ghee. Serve with idli, dosa or uthappam. Sprinkle generously on dosa for extra flavor.</p>
             </div>
             <div class="info-box">
               <h4>📦 Storage Tips</h4>
-              <p>Store in airtight container in cool dry place. Always use dry spoon. Refrigerate after opening. Best consumed within 3 months.</p>
+              <p>Store in airtight container in cool dry place. Use a dry spoon every time. Refrigerate after opening for best results.</p>
             </div>
             <div class="info-box">
-              <h4>⭐ Why Special</h4>
-              <p>Rich in protein and fiber. Loaded with nuts and seeds. Traditional roasting method. No preservatives or artificial additives.</p>
+              <h4>⭐ What Makes It Special</h4>
+              <p>Loaded with nuts and seeds. Rich protein and fiber content. Traditional roasting method for authentic aroma.</p>
             </div>
           </div>
           <div class="price-section">
@@ -342,7 +368,7 @@
     </section>
   </div>
 
-  <!-- ════════════════════ IDLI PODI PAGE ════════════════════ -->
+  <!-- ════════ IDLI PODI PAGE ════════ -->
   <div id="page-idli" class="page">
     <section class="product-page">
       <button class="back-btn" onclick="showPage('home')">← Back to Products</button>
@@ -358,7 +384,7 @@
           </div>
           <h1>Idli Podi</h1>
           <p class="prod-tagline">A Perfect Blend of Tradition & Authentic Taste!</p>
-          <p class="prod-desc">A classic South Indian staple — perfect to mix with gingelly oil or ghee. Rich in taste, light on the stomach. Made with 100% natural ingredients using traditional roasting method.</p>
+          <p class="prod-desc">A classic South Indian staple — perfect with gingelly oil or ghee. Light on the stomach, rich in taste. Made with whole spices using the same method used in traditional Tamil homes.</p>
           <div class="info-grid">
             <div class="info-box">
               <h4>🌶️ Ingredients</h4>
@@ -366,15 +392,15 @@
             </div>
             <div class="info-box">
               <h4>🍲 How to Use</h4>
-              <p>Mix idli podi with sesame oil or ghee. Serve with idli, dosa or uthappam. Sprinkle on dosa for extra flavor.</p>
+              <p>Mix with sesame oil or ghee and serve with idli, dosa or uthappam. Sprinkle on dosa or use as a side dish.</p>
             </div>
             <div class="info-box">
               <h4>📦 Storage Tips</h4>
-              <p>Store in airtight container away from moisture. Use clean dry spoon every time. Keep in cool place. Refrigerate after opening.</p>
+              <p>Store in airtight container away from moisture. Use clean dry spoon. Keep in cool place. Refrigerate after opening.</p>
             </div>
             <div class="info-box">
-              <h4>⭐ Why Special</h4>
-              <p>Perfect balance of spice and flavor. Rich aroma with traditional roasting. No preservatives or artificial additives.</p>
+              <h4>⭐ What Makes It Special</h4>
+              <p>Perfect balance of spice and flavor. Rich aroma from traditional roasting. Made with pure whole spices only.</p>
             </div>
           </div>
           <div class="price-section">
@@ -392,7 +418,7 @@
     </section>
   </div>
 
-  <!-- ════════════════════ CHOCO NUTRI MIX PAGE ════════════════════ -->
+  <!-- ════════ CHOCO NUTRI MIX PAGE ════════ -->
   <div id="page-choco" class="page">
     <section class="product-page">
       <button class="back-btn" onclick="showPage('home')">← Back to Products</button>
@@ -403,12 +429,12 @@
         </div>
         <div class="product-page-info">
           <div class="prod-badges-row">
-            <div class="prod-tag-top">Perfect for Kids & Adults · Health Drink Mix</div>
+            <div class="prod-tag-top">Perfect for Kids & Adults · Health Drink</div>
             <div class="prod-shelf">📅 Shelf Life: 2 Months</div>
           </div>
           <h1>Choco Nutri Mix</h1>
           <p class="prod-tagline">A Healthier Way to Happiness!</p>
-          <p class="prod-desc">A delicious blend of millets, nuts, cocoa and natural goodness. Rich in calcium, protein and energy. No artificial flavors. Ideal for kids, students and fitness lovers.</p>
+          <p class="prod-desc">A delicious blend of millets, nuts, cocoa and natural sweetness. Rich in calcium and protein. Ideal for children, students and anyone who wants a wholesome and tasty drink.</p>
           <div class="info-grid">
             <div class="info-box">
               <h4>🍫 Ingredients</h4>
@@ -416,15 +442,15 @@
             </div>
             <div class="info-box">
               <h4>🥣 How to Use</h4>
-              <p>Add 1–2 tablespoons to hot milk and mix well. Stir until smooth and serve warm. Great as breakfast or evening energy drink.</p>
+              <p>Add 1–2 tablespoons to hot milk. Stir well until smooth. Serve warm. Great as breakfast drink or evening snack.</p>
             </div>
             <div class="info-box">
               <h4>📦 Storage Tips</h4>
-              <p>Store in cool dry place in airtight container. Keep away from moisture and sunlight. Use dry spoon. Best within 2 months.</p>
+              <p>Keep in cool dry place in airtight container. Away from moisture and sunlight. Use dry spoon. Best within 2 months.</p>
             </div>
             <div class="info-box">
-              <h4>⭐ Why Special</h4>
-              <p>Made with millets and dry fruits. Rich in calcium, protein and energy. No artificial flavors. Loved by whole family.</p>
+              <h4>⭐ What Makes It Special</h4>
+              <p>Made with millets and real dry fruits. Natural jaggery sweetener. No refined sugar. Loved by children and adults alike.</p>
             </div>
           </div>
           <div class="price-section">
@@ -442,7 +468,7 @@
     </section>
   </div>
 
-  <!-- ════════════════════ MORINGA PAGE ════════════════════ -->
+  <!-- ════════ MORINGA PAGE ════════ -->
   <div id="page-moringa" class="page">
     <section class="product-page">
       <button class="back-btn" onclick="showPage('home')">← Back to Products</button>
@@ -458,7 +484,7 @@
           </div>
           <h1>Moringa Soup Powder</h1>
           <p class="prod-tagline">A Natural Way to Good Health!</p>
-          <p class="prod-desc">A nutritious blend of moringa leaves, spices and natural ingredients. Rich in iron and nutrients. Supports immunity and overall health. Light and easy to digest for all age groups.</p>
+          <p class="prod-desc">A nutritious herbal blend with moringa leaves as the hero ingredient. Iron-rich, light on the stomach and easy to prepare. A warm bowl every morning can make a real difference to your health.</p>
           <div class="info-grid">
             <div class="info-box">
               <h4>🌿 Ingredients</h4>
@@ -466,15 +492,15 @@
             </div>
             <div class="info-box">
               <h4>🍲 How to Use</h4>
-              <p>Add 1–2 teaspoons to 1 cup of water. Boil for 3–5 minutes and stir well. Adjust salt if needed. Serve hot as healthy soup.</p>
+              <p>Add 1–2 teaspoons to 1 cup of water. Boil for 3–5 minutes. Stir well. Adjust salt to taste. Serve hot.</p>
             </div>
             <div class="info-box">
               <h4>📦 Storage Tips</h4>
-              <p>Store in airtight container away from sunlight. Keep in cool dry place. Use dry spoon. Best consumed within 2 months of opening.</p>
+              <p>Store in airtight container away from sunlight. Cool and dry place. Use dry spoon. Best within 2 months of opening.</p>
             </div>
             <div class="info-box">
-              <h4>⭐ Why Special</h4>
-              <p>Rich in iron and calcium from moringa. Supports immunity. Light and easy to digest. No preservatives. Traditional preparation.</p>
+              <h4>⭐ What Makes It Special</h4>
+              <p>Rich in iron and calcium from pure moringa leaves. Light and easy to digest. Supports daily immunity naturally.</p>
             </div>
           </div>
           <div class="price-section">
@@ -492,7 +518,7 @@
     </section>
   </div>
 
-  <!-- ════════════════════ COMBOS PAGE ════════════════════ -->
+  <!-- ════════ COMBOS PAGE ════════ -->
   <div id="page-combos" class="page">
     <section class="combos-page">
       <div class="section-header">
@@ -516,11 +542,11 @@
               <div class="combo-item">✅ Idli Podi – 250g</div>
             </div>
             <div class="combo-price-row">
-              <div class="combo-original">Original: ₹340</div>
-              <div class="combo-offer">Combo: ₹300</div>
+              <div class="combo-original">₹340</div>
+              <div class="combo-offer">₹300</div>
             </div>
             <div class="combo-save">You Save ₹40!</div>
-            <a href="https://wa.me/919486772630?text=Hi! I want to order the Kitchen Starter Pack combo from Kai Manam"
+            <a href="https://wa.me/919486772630?text=Hi! I want the Kitchen Starter Pack combo"
             class="order-btn" target="_blank">💬 Order This Combo</a>
           </div>
         </div>
@@ -541,11 +567,11 @@
               <div class="combo-item">✅ Choco Nutri Mix – 250g</div>
             </div>
             <div class="combo-price-row">
-              <div class="combo-original">Original: ₹560</div>
-              <div class="combo-offer">Combo: ₹499</div>
+              <div class="combo-original">₹560</div>
+              <div class="combo-offer">₹499</div>
             </div>
             <div class="combo-save">You Save ₹61!</div>
-            <a href="https://wa.me/919486772630?text=Hi! I want to order the Family Health Pack combo from Kai Manam"
+            <a href="https://wa.me/919486772630?text=Hi! I want the Family Health Pack combo"
             class="order-btn" target="_blank">💬 Order This Combo</a>
           </div>
         </div>
@@ -564,26 +590,25 @@
               <div class="combo-item">✅ Moringa Soup Powder – 250g</div>
             </div>
             <div class="combo-price-row">
-              <div class="combo-original">Original: ₹420</div>
-              <div class="combo-offer">Combo: ₹380</div>
+              <div class="combo-original">₹420</div>
+              <div class="combo-offer">₹380</div>
             </div>
             <div class="combo-save">You Save ₹40!</div>
-            <a href="https://wa.me/919486772630?text=Hi! I want to order the Wellness Duo combo from Kai Manam"
+            <a href="https://wa.me/919486772630?text=Hi! I want the Wellness Duo combo"
             class="order-btn" target="_blank">💬 Order This Combo</a>
           </div>
         </div>
 
         <div class="combo-card">
-          <div class="combo-tag purple">👑 Premium</div>
+          <div class="combo-tag purple">👑 Try Everything</div>
           <div class="combo-imgs">
             <img src="sambar.png" alt="Sambar">
-            <img src="healthyidli.png" alt="Healthy Idli">
             <img src="choco.png" alt="Choco">
             <img src="moringa.png" alt="Moringa">
           </div>
           <div class="combo-body">
             <h3>Complete Kai Manam Pack</h3>
-            <p>All our bestselling products in one order</p>
+            <p>Try all our bestselling products in one order</p>
             <div class="combo-includes">
               <div class="combo-item">✅ Sambar Podi – 100g</div>
               <div class="combo-item">✅ Healthy Idli Podi – 100g</div>
@@ -591,11 +616,11 @@
               <div class="combo-item">✅ Moringa Soup Powder – 100g</div>
             </div>
             <div class="combo-price-row">
-              <div class="combo-original">Original: ₹350</div>
-              <div class="combo-offer">Combo: ₹299</div>
+              <div class="combo-original">₹350</div>
+              <div class="combo-offer">₹299</div>
             </div>
             <div class="combo-save">You Save ₹51!</div>
-            <a href="https://wa.me/919486772630?text=Hi! I want to order the Complete Kai Manam Pack from Kai Manam"
+            <a href="https://wa.me/919486772630?text=Hi! I want the Complete Kai Manam Pack"
             class="order-btn" target="_blank">💬 Order This Combo</a>
           </div>
         </div>
@@ -604,7 +629,7 @@
     </section>
   </div>
 
-  <!-- ════════════════════ FAQ PAGE ════════════════════ -->
+  <!-- ════════ FAQ PAGE ════════ -->
   <div id="page-faq" class="page">
     <section class="faq-page">
       <div class="section-header">
@@ -628,16 +653,7 @@
             How long do the products last? <span>+</span>
           </button>
           <div class="faq-a">
-            <p>Shelf life varies by product: Sambar Podi lasts up to 6 months, Idli Podi up to 4 months, Healthy Idli Podi up to 3 months, and Choco Nutri Mix and Moringa Soup Powder up to 2 months. Always store in an airtight container in a cool dry place and use a dry spoon to extend shelf life.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" onclick="toggleFaq(this)">
-            Are there any preservatives or artificial colors? <span>+</span>
-          </button>
-          <div class="faq-a">
-            <p>Absolutely not. Kai Manam products contain zero preservatives, zero artificial colors and zero artificial flavors. Everything is 100% natural and homemade. We use the same ingredients we would use to cook for our own family.</p>
+            <p>Shelf life varies: Sambar Podi — 6 months. Idli Podi — 4 months. Healthy Idli Podi — 3 months. Choco Nutri Mix and Moringa Soup Powder — 2 months each. Always store in an airtight container in a cool dry place and use a dry spoon to extend shelf life.</p>
           </div>
         </div>
 
@@ -646,7 +662,7 @@
             How do I order? Do you deliver? <span>+</span>
           </button>
           <div class="faq-a">
-            <p>Simply click the WhatsApp button and send us your order. We will confirm the details and deliver to your doorstep. We offer free delivery within Pudukkottai city. For orders outside Pudukkottai, delivery can be arranged — contact us for details.</p>
+            <p>Simply click the WhatsApp Order button and send us your order details. We confirm quickly and deliver to your doorstep. Free delivery within Pudukkottai city. For outside Pudukkottai, delivery can be arranged — contact us for details.</p>
           </div>
         </div>
 
@@ -655,7 +671,7 @@
             Can I order in bulk for functions or events? <span>+</span>
           </button>
           <div class="faq-a">
-            <p>Yes! We accept bulk orders for weddings, functions and events. Please contact us at least 3–5 days in advance for bulk orders so we can prepare fresh stock for you. WhatsApp us at 9486772630 for bulk pricing.</p>
+            <p>Yes! We gladly accept bulk orders for weddings, functions and events. Please contact us at least 3–5 days in advance so we can prepare fresh stock. WhatsApp us at 9486772630 for bulk pricing and availability.</p>
           </div>
         </div>
 
@@ -664,16 +680,7 @@
             Is the Choco Nutri Mix suitable for diabetic people? <span>+</span>
           </button>
           <div class="faq-a">
-            <p>The Choco Nutri Mix contains jaggery powder as a natural sweetener. We recommend consulting your doctor if you are diabetic before consuming. However it contains no refined sugar and is made with healthy millets and nuts.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" onclick="toggleFaq(this)">
-            How is it different from store-bought masala powders? <span>+</span>
-          </button>
-          <div class="faq-a">
-            <p>Store-bought powders often contain preservatives, artificial colors and flavor enhancers to increase shelf life. Kai Manam products are freshly made in small batches in our home kitchen using whole spices — just like your grandmother used to make. The aroma and taste are completely different.</p>
+            <p>The Choco Nutri Mix uses jaggery powder as a natural sweetener — no refined sugar. However we recommend consulting your doctor before consuming if you are diabetic. It is made with healthy millets and nuts which are generally considered better options.</p>
           </div>
         </div>
 
@@ -682,7 +689,16 @@
             What payment methods do you accept? <span>+</span>
           </button>
           <div class="faq-a">
-            <p>We accept UPI payments (GPay, PhonePe, Paytm), bank transfer and cash on delivery within Pudukkottai. Payment details will be shared when you confirm your order on WhatsApp.</p>
+            <p>We accept UPI payments via GPay, PhonePe and Paytm, bank transfer and cash on delivery within Pudukkottai. Payment details will be shared when you confirm your order on WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How is it different from store-bought masala powders? <span>+</span>
+          </button>
+          <div class="faq-a">
+            <p>Store-bought powders often contain preservatives, artificial colors and flavor enhancers. Kai Manam products are freshly made in small batches using whole spices — the same way your grandmother used to make. The difference in aroma and taste is noticeable from the moment you open the packet.</p>
           </div>
         </div>
 
@@ -690,7 +706,7 @@
     </section>
   </div>
 
-  <!-- ════════════════════ ABOUT PAGE ════════════════════ -->
+  <!-- ════════ ABOUT PAGE ════════ -->
   <div id="page-about" class="page">
     <section class="about-page">
       <div class="section-header">
@@ -701,13 +717,13 @@
         <div class="about-text">
           <p>Kai Manam is a family business started in 2026 in Pudukkottai, Tamil Nadu. We make pure homemade masala powders using traditional Tamil recipes passed down through generations.</p>
           <p>Every batch is prepared fresh in our home kitchen with zero preservatives, zero artificial colors and zero shortcuts. Just pure spices, pure love.</p>
-          <p>Our name <strong>Kai Manam</strong> means the aroma from the hand — because every product carries the warmth and care of homemade cooking.</p>
+          <p>Our name <strong>Kai Manam</strong> means the aroma from the hand — because every product carries the warmth and care of homemade cooking. We started with a simple question: why should food made at home taste different from food sold in shops?</p>
           <div class="about-values">
             <div class="value">🌿 <span>100% Natural Ingredients</span></div>
             <div class="value">🏡 <span>Homemade with Care</span></div>
             <div class="value">🌶️ <span>Traditional Tamil Recipes</span></div>
             <div class="value">📦 <span>Fresh Small Batches Only</span></div>
-            <div class="value">✅ <span>Zero Preservatives Ever</span></div>
+            <div class="value">✅ <span>Zero Artificial Additives</span></div>
             <div class="value">💬 <span>Direct from Family to You</span></div>
           </div>
         </div>
@@ -716,7 +732,7 @@
           <div class="about-tagline">The Taste of Tradition</div>
           <div class="about-stats">
             <div class="stat"><strong>5</strong><span>Products</span></div>
-            <div class="stat"><strong>0</strong><span>Preservatives</span></div>
+            <div class="stat"><strong>0</strong><span>Additives</span></div>
             <div class="stat"><strong>100%</strong><span>Homemade</span></div>
           </div>
           <div class="about-quote">"Not Just Food... It's a Feeling of Home"</div>
@@ -730,13 +746,13 @@
     </section>
   </div>
 
-  <!-- ════════════════════ CONTACT PAGE ════════════════════ -->
+  <!-- ════════ CONTACT PAGE ════════ -->
   <div id="page-contact" class="page">
     <section class="contact-page">
       <div class="section-header light">
         <div class="section-tag light-tag">Get in Touch</div>
         <h2>Contact <span>Us</span></h2>
-        <p>Order directly on WhatsApp or send us a message. We respond fast!</p>
+        <p>Order on WhatsApp or send us a message. We respond fast!</p>
       </div>
       <div class="contact-inner">
         <div class="contact-info">
@@ -803,9 +819,12 @@
           </div>
           <div class="form-group">
             <label>Message</label>
-            <textarea id="fmsg" placeholder="Your order details or questions..."></textarea>
+            <textarea id="fmsg"
+            placeholder="Your order details or questions..."></textarea>
           </div>
-          <button class="submit-btn" onclick="submitForm()">Send via WhatsApp</button>
+          <button class="submit-btn" onclick="submitForm()">
+            Send via WhatsApp
+          </button>
         </div>
       </div>
     </section>
@@ -816,7 +835,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <div class="footer-logo">கை மணம்</div>
-        <p>Pure homemade masala powders from Pudukkottai, Tamil Nadu. Made with traditional recipes and love.</p>
+        <p>Pure homemade masala powders from Pudukkottai, Tamil Nadu. Traditional recipes. Made with love.</p>
         <div class="footer-social">
           <a href="https://wa.me/919486772630" target="_blank">💬</a>
           <a href="https://www.instagram.com/kaimanam_homemade" target="_blank">📸</a>
@@ -849,7 +868,7 @@
     </div>
   </footer>
 
-  <!-- FLOATING BUTTONS — desktop -->
+  <!-- FLOATING BUTTONS desktop -->
   <div class="float-buttons">
     <a href="https://wa.me/919486772630?text=Hi! I want to order from Kai Manam"
     class="float-wa" target="_blank">💬</a>
@@ -857,7 +876,7 @@
     class="float-ig" target="_blank">📸</a>
   </div>
 
-  <!-- STICKY ORDER BUTTON — mobile only -->
+  <!-- STICKY BUTTON mobile -->
   <div class="sticky-mobile-btn">
     <a href="https://wa.me/919486772630?text=Hi! I want to order from Kai Manam"
     target="_blank">💬 Order on WhatsApp</a>
