@@ -133,3 +133,77 @@ function submitForm() {
     '_blank'
   );
 }
+// ── PACK SELECTION ──
+function selectPack(el, groupId) {
+  // Remove selected from all in this group
+  document.querySelectorAll('#' + groupId + ' .price-tag').forEach(function (tag) {
+    tag.classList.remove('selected');
+  });
+  // Add selected to clicked
+  el.classList.add('selected');
+}
+
+// ── ORDER WITH SELECTED PACK ──
+function orderWithPack(groupId, productName) {
+  const selected = document.querySelector('#' + groupId + ' .price-tag.selected');
+
+  let packInfo = '';
+  if (selected) {
+    const size = selected.childNodes[0].textContent.trim();
+    const price = selected.querySelector('span').textContent.trim();
+    packInfo = size + ' pack at ' + price;
+  } else {
+    packInfo = 'pack size not selected — please confirm';
+  }
+
+  const msg =
+    'Hi! I want to order *' + productName + '* from Kai Manam.\n' +
+    'Pack: ' + packInfo + '\n' +
+    'Please confirm availability and delivery details.';
+
+  window.open(
+    'https://wa.me/919486772630?text=' + encodeURIComponent(msg),
+    '_blank'
+  );
+}
+// ── TYPING ANIMATION ──
+const phrases = [
+  'Handcrafted with love in Pudukkottai, Tamil Nadu.',
+  'Because real flavor cannot be factory made.',
+  'From our kitchen directly to your home.',
+  'Traditional recipes. Pure ingredients. Zero shortcuts.',
+  'The aroma from the hand — that is Kai Manam.'
+];
+
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typingEl = document.getElementById('heroTyping');
+
+function typeText() {
+  if (!typingEl) return;
+
+  const current = phrases[phraseIndex];
+
+  if (!isDeleting) {
+    typingEl.textContent = current.substring(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === current.length) {
+      isDeleting = true;
+      setTimeout(typeText, 2000);
+      return;
+    }
+  } else {
+    typingEl.textContent = current.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+    }
+  }
+
+  setTimeout(typeText, isDeleting ? 40 : 70);
+}
+
+// Start typing after loader finishes
+setTimeout(typeText, 2200);

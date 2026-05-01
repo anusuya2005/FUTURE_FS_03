@@ -41,6 +41,7 @@
         </ul>
       </li>
       <li><a href="#" onclick="showPage('combos')">Combos</a></li>
+      <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
       <li><a href="#" onclick="showPage('faq')">FAQ</a></li>
       <li><a href="#" onclick="showPage('about')">About</a></li>
       <li><a href="#" onclick="showPage('contact')">Contact</a></li>
@@ -67,21 +68,20 @@
     <section class="hero">
       <div class="hero-content">
         <div class="hero-tag">Pudukkottai, Tamil Nadu · Est. 2026</div>
-        <div class="hero-logo-tamil">கை மணம்</div>
-        <div class="hero-logo-eng">KAI MANAM</div>
+        <img src="logo.png" alt="Kai Manam Logo" class="hero-logo-img">
         <div class="hero-divider"></div>
         <h1>Not Just Food...<br><span>It's a Feeling of Home</span></h1>
-        <p>Pure homemade masala powders made with traditional Tamil recipes and love. From our kitchen directly to yours.</p>
+          <p class="hero-typing" id="heroTyping"></p>
         <div class="hero-btns">
           <a href="https://wa.me/919486772630?text=Hi! I want to order from Kai Manam"
           class="btn-green" target="_blank">💬 Order on WhatsApp</a>
-          <button class="btn-outline" onclick="showPage('sambar')">Explore Products</button>
+          <button class="btn-outline" onclick="document.getElementById('preview-section').scrollIntoView({behavior:'smooth'})">Explore Products</button>
         </div>
       </div>
     </section>
 
     <!-- PRODUCTS PREVIEW -->
-    <section class="preview-section">
+    <section class="preview-section" id="preview-section">
       <div class="section-header">
         <div class="section-tag">Our Products</div>
         <h2>Made Fresh, <span>Delivered with Love</span></h2>
@@ -181,7 +181,6 @@
         </div>
       </div>
     </section>
-
     <!-- CUSTOMER REVIEWS -->
     <section class="reviews-section">
       <div class="section-header">
@@ -305,14 +304,19 @@
           </div>
           <div class="price-section">
             <h4>Choose Your Pack</h4>
-            <div class="price-tags">
-              <div class="price-tag">100g<span>₹60</span></div>
-              <div class="price-tag">250g<span>₹150</span></div>
-              <div class="price-tag">500g<span>₹300</span></div>
+             <div class="price-tags" id="price-sambar">
+            <div class="price-tag" onclick="selectPack(this, 'price-sambar')">
+              100g<span>₹60</span>
+            </div>
+            <div class="price-tag" onclick="selectPack(this, 'price-sambar')">
+              250g<span>₹150</span>
+            </div>
+            <div class="price-tag" onclick="selectPack(this, 'price-sambar')">
+              500g<span>₹300</span>
             </div>
           </div>
-          <a href="https://wa.me/919486772630?text=Hi! I want to order Sambar Podi from Kai Manam"
-          class="order-btn" target="_blank">💬 Order Sambar Podi on WhatsApp</a>
+          </div>
+          <a href="#" class="order-btn" onclick="orderWithPack('price-sambar', 'Sambar Podi')">💬 Order Sambar Podi on WhatsApp</a>
         </div>
       </div>
     </section>
@@ -355,14 +359,13 @@
           </div>
           <div class="price-section">
             <h4>Choose Your Pack</h4>
-            <div class="price-tags">
-              <div class="price-tag">100g<span>₹50</span></div>
-              <div class="price-tag">250g<span>₹125</span></div>
-              <div class="price-tag">500g<span>₹250</span></div>
-            </div>
+            <div class="price-tags" id="price-healthyidli">
+  <div class="price-tag" onclick="selectPack(this,'price-healthyidli')">100g<span>₹50</span></div>
+  <div class="price-tag" onclick="selectPack(this,'price-healthyidli')">250g<span>₹125</span></div>
+  <div class="price-tag" onclick="selectPack(this,'price-healthyidli')">500g<span>₹250</span></div>
+</div>
           </div>
-          <a href="https://wa.me/919486772630?text=Hi! I want to order Healthy Idli Podi from Kai Manam"
-          class="order-btn" target="_blank">💬 Order Healthy Idli Podi on WhatsApp</a>
+          <a href="#" class="order-btn" onclick="orderWithPack('price-healthyidli', 'Healthy Idli Podi')">💬 Order Healthy Idli Podi on WhatsApp</a>
         </div>
       </div>
     </section>
@@ -405,14 +408,13 @@
           </div>
           <div class="price-section">
             <h4>Choose Your Pack</h4>
-            <div class="price-tags">
-              <div class="price-tag">100g<span>₹40</span></div>
-              <div class="price-tag">250g<span>₹100</span></div>
-              <div class="price-tag">500g<span>₹200</span></div>
-            </div>
+            <div class="price-tags" id="price-idli">
+  <div class="price-tag" onclick="selectPack(this,'price-idli')">100g<span>₹40</span></div>
+  <div class="price-tag" onclick="selectPack(this,'price-idli')">250g<span>₹100</span></div>
+  <div class="price-tag" onclick="selectPack(this,'price-idli')">500g<span>₹200</span></div>
+</div>
           </div>
-          <a href="https://wa.me/919486772630?text=Hi! I want to order Idli Podi from Kai Manam"
-          class="order-btn" target="_blank">💬 Order Idli Podi on WhatsApp</a>
+          <a href="#" class="order-btn" onclick="orderWithPack('price-idli', 'Idli Podi')">💬 Order Idli Podi on WhatsApp</a>
         </div>
       </div>
     </section>
@@ -455,14 +457,13 @@
           </div>
           <div class="price-section">
             <h4>Choose Your Pack</h4>
-            <div class="price-tags">
-              <div class="price-tag">100g<span>₹130</span></div>
-              <div class="price-tag">250g<span>₹325</span></div>
-              <div class="price-tag">500g<span>₹650</span></div>
-            </div>
+            <div class="price-tags" id="price-choco">
+  <div class="price-tag" onclick="selectPack(this,'price-choco')">100g<span>₹130</span></div>
+  <div class="price-tag" onclick="selectPack(this,'price-choco')">250g<span>₹325</span></div>
+  <div class="price-tag" onclick="selectPack(this,'price-choco')">500g<span>₹650</span></div>
+</div>
           </div>
-          <a href="https://wa.me/919486772630?text=Hi! I want to order Choco Nutri Mix from Kai Manam"
-          class="order-btn" target="_blank">💬 Order Choco Nutri Mix on WhatsApp</a>
+          <a href="#" class="order-btn" onclick="orderWithPack('price-choco', 'Choco Nutri Mix')">💬 Order Choco Nutri Mix on WhatsApp</a>
         </div>
       </div>
     </section>
@@ -505,14 +506,13 @@
           </div>
           <div class="price-section">
             <h4>Choose Your Pack</h4>
-            <div class="price-tags">
-              <div class="price-tag">100g<span>₹60</span></div>
-              <div class="price-tag">250g<span>₹150</span></div>
-              <div class="price-tag">500g<span>₹350</span></div>
-            </div>
+            <div class="price-tags" id="price-moringa">
+  <div class="price-tag" onclick="selectPack(this,'price-moringa')">100g<span>₹60</span></div>
+  <div class="price-tag" onclick="selectPack(this,'price-moringa')">250g<span>₹150</span></div>
+  <div class="price-tag" onclick="selectPack(this,'price-moringa')">500g<span>₹350</span></div>
+</div>
           </div>
-          <a href="https://wa.me/919486772630?text=Hi! I want to order Moringa Soup Powder from Kai Manam"
-          class="order-btn" target="_blank">💬 Order Moringa Soup Powder on WhatsApp</a>
+          <a href="#" class="order-btn" onclick="orderWithPack('price-moringa', 'Moringa Soup Powder')">💬 Order Moringa Soup Powder on WhatsApp</a>
         </div>
       </div>
     </section>
@@ -628,7 +628,42 @@
       </div>
     </section>
   </div>
-
+<!-- ════════ GALLERY PAGE ════════ -->
+  <div id="page-gallery" class="page">
+    <section class="gallery-page">
+      <div class="section-header">
+        <div class="section-tag">Our Products</div>
+        <h2>A Glimpse of <span>Kai Manam</span></h2>
+        <p>Pure homemade goodness — straight from our kitchen to your home.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="sambar.png" alt="Sambar Podi">
+          <div class="gallery-caption">Sambar Podi</div>
+        </div>
+        <div class="gallery-item">
+          <img src="healthyidli.png" alt="Healthy Idli Podi">
+          <div class="gallery-caption">Healthy Idli Podi</div>
+        </div>
+        <div class="gallery-item">
+          <img src="idli.png" alt="Idli Podi">
+          <div class="gallery-caption">Idli Podi</div>
+        </div>
+        <div class="gallery-item">
+          <img src="choco.png" alt="Choco Nutri Mix">
+          <div class="gallery-caption">Choco Nutri Mix</div>
+        </div>
+        <div class="gallery-item">
+          <img src="moringa.png" alt="Moringa Soup Powder">
+          <div class="gallery-caption">Moringa Soup Powder</div>
+        </div>
+        <div class="gallery-item">
+          <img src="logo.png" alt="Kai Manam">
+          <div class="gallery-caption">Kai Manam Brand</div>
+        </div>
+      </div>
+    </section>
+  </div>
   <!-- ════════ FAQ PAGE ════════ -->
   <div id="page-faq" class="page">
     <section class="faq-page">
@@ -791,8 +826,18 @@
           <div class="contact-cta-btns">
             <a href="https://wa.me/919486772630?text=Hi! I want to order from Kai Manam"
             class="btn-green" target="_blank">💬 Order on WhatsApp</a>
+            <a href="tel:+919486772630" class="btn-call">📞 Call Us: 9486772630</a>
             <a href="https://www.instagram.com/kaimanam_homemade"
             class="btn-insta" target="_blank">📸 Follow on Instagram</a>
+          </div>
+
+          <!-- GOOGLE MAP -->
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d490.58097718135724!2d78.81156681150962!3d10.370018689325102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1777630746060!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
           </div>
         </div>
         <div class="contact-form">
@@ -856,6 +901,7 @@
         <ul>
           <li><a href="#" onclick="showPage('home')">Home</a></li>
           <li><a href="#" onclick="showPage('combos')">Combo Deals</a></li>
+          <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
           <li><a href="#" onclick="showPage('faq')">FAQ</a></li>
           <li><a href="#" onclick="showPage('about')">About Us</a></li>
           <li><a href="#" onclick="showPage('contact')">Contact</a></li>
