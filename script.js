@@ -1,8 +1,37 @@
 // ── PAGE LOADER ──
+// ── LOADER QUOTE TYPING ──
 window.addEventListener('load', function () {
-  setTimeout(function () {
-    document.getElementById('loader').classList.add('hidden');
-  }, 2000);
+  const quote = '"Made with Hands, Served with Heart..."';
+  const el = document.getElementById('loaderQuote');
+  let i = 0;
+
+  // Type the quote letter by letter
+  function typeQuote() {
+    if (i < quote.length) {
+      el.textContent += quote[i];
+      i++;
+      setTimeout(typeQuote, 45);
+    } else {
+      // Quote fully typed — wait then erase
+      setTimeout(eraseQuote, 800);
+    }
+  }
+
+  // Erase the quote letter by letter
+  function eraseQuote() {
+    if (el.textContent.length > 0) {
+      el.textContent = el.textContent.slice(0, -1);
+      setTimeout(eraseQuote, 25);
+    } else {
+      // Quote fully erased — hide loader
+      setTimeout(function () {
+        document.getElementById('loader').classList.add('hidden');
+      }, 300);
+    }
+  }
+
+  // Start typing after short delay
+  setTimeout(typeQuote, 600);
 });
 
 // ── PAGE SWITCHING ──
@@ -64,12 +93,16 @@ function setRating(val) {
   selectedRating = val;
   const stars = document.querySelectorAll('.star-rating span');
   stars.forEach(function (s, i) {
-    s.classList.toggle('active', i < val);
+    if (i < val) {
+      s.classList.add('active');
+    } else {
+      s.classList.remove('active');
+    }
   });
 }
 
-// Set default 5 stars on load
-window.addEventListener('DOMContentLoaded', function () {
+// Set default 5 stars when page loads
+document.addEventListener('DOMContentLoaded', function () {
   setRating(5);
 });
 
