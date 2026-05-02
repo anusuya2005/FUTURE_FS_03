@@ -1280,8 +1280,8 @@ footer {
   margin-right: auto;
 }
 .loader-logo-img {
-  width: 340px;
-  max-width: 88%;
+  width: 280px;
+  max-width: 70vw;
   margin-bottom: 20px;
   animation: logoFadeIn 1s ease forwards, logoPulse 3s ease-in-out 1s infinite;
   filter: drop-shadow(0 0 30px rgba(201,147,42,0.6));
@@ -1295,4 +1295,26 @@ footer {
 @keyframes logoPulse {
   0%, 100% { filter: drop-shadow(0 0 30px rgba(201,147,42,0.6)); }
   50% { filter: drop-shadow(0 0 60px rgba(201,147,42,0.95)); }
+}
+@media (max-width: 480px) {
+  .loader-logo-img {
+    width: 200px;
+    max-width: 65vw;
+  }
+
+  .loader-quote {
+    font-size: 16px;
+    max-width: 260px;
+    padding: 0 20px;
+  }
+
+  .loader-text {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .loader-inner {
+    padding: 0 20px;
+    text-align: center;
+  }
 }
