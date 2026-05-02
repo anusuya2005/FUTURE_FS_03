@@ -1,6 +1,10 @@
 # 🌶️ Kai Manam – Homemade Masala Powders Website
 ### Task 3 | Full Stack Web Development | Future Interns 2026
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge)](https://anusuya2005.github.io/FUTURE_FS_03/)
+
 A real-world business website built to help a local brand grow online and attract customers.
+
 ---
 
 ## 📸 Website Preview
@@ -113,7 +117,14 @@ convert customers.
 
 ---
 
-## 💼 Business Pitch
+## 🎯 Impact
+
+- Improves business visibility beyond Instagram
+- Builds customer trust through detailed product transparency
+- Simplifies ordering with direct WhatsApp integration
+- Encourages higher sales using combo pricing strategy
+
+---
 
 ## 💼 Business Pitch
 
