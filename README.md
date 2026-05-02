@@ -81,12 +81,16 @@ convert customers.
 | About | Family story and brand values |
 | Contact | WhatsApp, call, form and Google Maps |
 
+---
+
 ## 🌟 Key Highlights
 - Built for a real local business (not a dummy project)
 - Focused on solving real customer problems
 - Integrated WhatsApp for direct ordering
 - Designed mobile-first for local users
 - Includes combo deals to increase order value
+
+---
 
 ### Features Built
 - ✅ Animated loading screen with brand logo and typing quote
