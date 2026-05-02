@@ -1,6 +1,6 @@
 # 🌶️ Kai Manam – Homemade Masala Powders Website
 ### Task 3 | Full Stack Web Development | Future Interns 2026
-
+A real-world business website built to help a local brand grow online and attract customers.
 ---
 
 ## 📸 Website Preview
@@ -80,6 +80,13 @@ convert customers.
 | FAQ | Answers 7 common customer questions automatically |
 | About | Family story and brand values |
 | Contact | WhatsApp, call, form and Google Maps |
+
+## 🌟 Key Highlights
+- Built for a real local business (not a dummy project)
+- Focused on solving real customer problems
+- Integrated WhatsApp for direct ordering
+- Designed mobile-first for local users
+- Includes combo deals to increase order value
 
 ### Features Built
 - ✅ Animated loading screen with brand logo and typing quote
@@ -172,15 +179,15 @@ FUTURE_FS_03/
 ├── choco.png           — Choco Nutri Mix product image
 ├── moringa.png         — Moringa Soup Powder product image
 ├── README.md           — Project documentation
-└── screenshots/        — Website screenshots
-├── 01-loader.png
-├── 02-hero.png
-├── 03-products.png
-├── 04-product-detail.png
-├── 05-combos.png
-├── 06-faq.png
-├── 07-contact.png
-└── 08-mobile.png
+└── screenshots/
+    ├── 01-loader.png
+    ├── 02-hero.png
+    ├── 03-products.png
+    ├── 04-product-detail.png
+    ├── 05-combos.png
+    ├── 06-faq.png
+    ├── 07-contact.png
+    └── 08-mobile.png
 ```
 ---
 
