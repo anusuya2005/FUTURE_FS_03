@@ -1318,3 +1318,50 @@ footer {
     text-align: center;
   }
 }
+.nav-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+  filter: brightness(1.1)
+          drop-shadow(0 0 8px rgba(201,147,42,0.5));
+  transition: all 0.3s ease;
+}
+
+.nav-logo-img:hover {
+  filter: brightness(1.2)
+          drop-shadow(0 0 16px rgba(201,147,42,0.8));
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .nav-logo-img {
+    height: 38px;
+  }
+}
+.hero-logo-tamil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.tamil-kai {
+  font-family: 'Lora', serif;
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 700;
+  color: #C9932A;
+  letter-spacing: 4px;
+  animation: logoFadeIn 1s ease forwards;
+  filter: drop-shadow(0 0 20px rgba(201,147,42,0.4));
+}
+
+.tamil-manam {
+  font-family: 'Lora', serif;
+  font-size: clamp(3.5rem, 10vw, 7rem);
+  font-weight: 700;
+  color: #E8D9B8;
+  letter-spacing: 4px;
+  animation: logoFadeIn 1.2s ease forwards;
+  filter: drop-shadow(0 0 20px rgba(232,217,184,0.3));
+}
