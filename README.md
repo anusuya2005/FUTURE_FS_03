@@ -115,38 +115,21 @@ convert customers.
 
 ## 💼 Business Pitch
 
-### Who is Kai Manam?
-Kai Manam is a homemade masala powder brand from
-Pudukkottai, Tamil Nadu. The name means the aroma
-from the hand in Tamil — reflecting their commitment
-to handcrafted, traditional cooking. They sell 5
-products: Sambar Podi, Healthy Idli Podi, Idli Podi,
-Choco Nutri Mix and Moringa Soup Powder.
+## 💼 Business Pitch
 
-### What Problem Does the Website Solve?
-Before this website, Kai Manam had no way for new
-customers to find them, trust them or order from
-them online. Homemade food businesses especially
-need trust — customers need to see ingredients,
-preparation methods and brand story before they buy.
-A plain Instagram page cannot provide this.
+Kai Manam is a homemade masala brand based in Pudukkottai that initially relied only on Instagram and word-of-mouth marketing.
 
-### How Does It Attract Customers?
-1. **Professional first impression** — premium design
-   matches their high quality branding
-2. **Full product transparency** — every product shows
-   ingredients, how to use, storage tips and shelf life
-3. **Easy ordering** — WhatsApp button pre-fills the
-   order message with selected pack size and price
-4. **Combo deals** — encourages customers to buy more
-   with attractive bundle savings
-5. **FAQ section** — removes buying hesitation by
-   answering common questions automatically
-6. **Google Maps** — customers can find them easily
-7. **Mobile first** — most customers in Pudukkottai
-   will visit on mobile — fully optimized
-8. **Review system** — customers can submit reviews
-   via WhatsApp building social proof over time
+The core problem was the lack of a professional online presence, which limited customer reach, trust, and ease of ordering.
+
+This website solves that by acting as a complete digital storefront where customers can:
+- Explore products with full transparency
+- View pricing and usage details
+- Order instantly via WhatsApp
+- Locate the business using Google Maps
+
+By combining strong branding, product clarity, and frictionless ordering, the website directly contributes to increasing customer trust, improving conversions, and enabling scalable business growth.
+
+This project demonstrates how a well-designed website can create real impact for a small local business.
 
 ---
 
