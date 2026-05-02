@@ -49,7 +49,7 @@ Pudukkottai – 622 003, Tamil Nadu
 Kai Manam is a brand new homemade spice business started
 in 2026 in Pudukkottai, Tamil Nadu. Despite having
 high quality products and beautiful branding, the business
-had no website and only 50 Instagram followers.
+had no website and only 199 Instagram followers.
 
 This meant:
 - New customers could not discover them online
